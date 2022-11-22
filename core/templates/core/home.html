@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="mt-5">
+
+    <div class="text-center">
+        <img src="{% static 'core/images/photo.jpg' %}" alt="profilepic"
+        class="img-thumbnail" width="250px" hight="150px">
+    </div>
+
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height:2rem;">
+            <p style="text-indent:100px;">
+                My Name is <b class="text-warning">Parshuram Patil</b> I have done my Bachelor of Engineering from 
+                Government College of Engineering, Jalgaon.
+                I have a 3 Years of Experience and I am a <b class="text-warning">Software Engineer</b> and the main work which I am currently doing in my 
+                organization is totally related to back-end development. I have good 
+                knowledge of Python, Django Framework, REST APIs and Database I have worked on PostgreSQL and 
+                MySQL.
+            </p>
+            <p>Apart from working as a back-end developer, I have exposure of Deploying Applications on AWS EC2 Machines,
+                working in the data pipeline and Front-End Tech, I have  knowledge of HTML/CSS, Javascript,
+                data_processor, AWS, apache Kafka, Redis, Docker, Git.
+            </p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+    
+</div>
+{% endblock content %}
